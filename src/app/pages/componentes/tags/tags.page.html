@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar color = 'warning'>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>componentes-tags</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+<h3>badge</h3>
+    <!-- Default -->
+<ion-badge>99</ion-badge>
+<br>
+<!-- Colors -->
+<ion-badge color="primary">11</ion-badge>
+<br>
+<ion-badge color="secondary">22</ion-badge>
+<br>
+<ion-badge color="tertiary">33</ion-badge>
+<br>
+<ion-badge color="success">44</ion-badge>
+<br>
+<ion-badge color="warning">55</ion-badge>
+<br>
+<ion-badge color="danger">66</ion-badge>
+<br>
+<ion-badge color="light">77</ion-badge>
+<br>
+<ion-badge color="medium">88</ion-badge>
+<br>
+<ion-badge color="dark">99</ion-badge>
+<br>
+
+<h3>Checkbox</h3>
+<!-- Item with badge on left and right -->
+<ion-item>
+  <ion-badge slot="start">11</ion-badge>
+  <ion-label>My Item</ion-label>
+  <ion-badge slot="end">22</ion-badge>
+</ion-item>
+
+<!-- Default Checkbox -->
+<ion-checkbox></ion-checkbox>
+<br>
+<!-- Disabled Checkbox -->
+<ion-checkbox disabled="true"></ion-checkbox>
+<br>
+<!-- Checked Checkbox -->
+<ion-checkbox checked="true"></ion-checkbox>
+<br>
+<!-- Checkbox Colors -->
+<ion-checkbox color="primary"></ion-checkbox>
+<ion-checkbox color="secondary"></ion-checkbox>
+<ion-checkbox color="danger"></ion-checkbox>
+<ion-checkbox color="light"></ion-checkbox>
+<ion-checkbox color="dark"></ion-checkbox>
+<br>
+<!-- Checkboxes in a List -->
+<ion-list>
+  <ion-item *ngFor="let entry of form">
+    <ion-label>{{entry.val}}</ion-label>
+    <ion-checkbox slot="end" [(ngModel)]="entry.isChecked"></ion-checkbox>
+  </ion-item>
+</ion-list>
+
+<h3>progress bar</h3>
+
+<!-- Default Progressbar -->
+<ion-progress-bar></ion-progress-bar>
+<br>
+<!-- Default Progressbar with 50 percent -->
+<ion-progress-bar value="0.5"></ion-progress-bar>
+<br>
+<!-- Colorize Progressbar -->
+<ion-progress-bar color="primary" value="0.5"></ion-progress-bar>
+<br>
+<ion-progress-bar color="secondary" value="0.5"></ion-progress-bar>
+<br>
+<!-- Other types -->
+<ion-progress-bar value="0.25" buffer="0.5"></ion-progress-bar>
+<br>
+<ion-progress-bar type="indeterminate"></ion-progress-bar>
+<br>
+<ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
+<br>
+</ion-content>

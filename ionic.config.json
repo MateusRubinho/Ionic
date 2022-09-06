@@ -1,0 +1,7 @@
+{
+  "name": "ionic6Teste2",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
